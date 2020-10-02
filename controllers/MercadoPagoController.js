@@ -11,7 +11,7 @@ class MercadoPagoController {
     }
 
     processIPN = async (req, res) => {
-        console.log(req.body);
+        console.log(req);
         res.json(req.body);
     }
 }
