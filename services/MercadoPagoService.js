@@ -16,7 +16,7 @@ class MercadoPagoService {
         const payer = {
             "name": "Lalo",
             "surname": "Landa",
-            "email": "test_user_63274575@testuser.com",
+            "email": "test_user_67666701@testuser.com",
             "phone": {
                 "area_code": "11",
                 "number": 22223333
