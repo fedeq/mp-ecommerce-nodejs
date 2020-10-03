@@ -11,10 +11,18 @@ class MercadoPagoController {
     }
 
     processIPN = async (req, res) => {
-        console.log(req);
-        console.log(req.query);
-        console.log(req.body);
-        res.json(req.body);
+        if (req.method === "POST") { 
+            let body = ""; 
+            req.on("data", chunk => {  
+                body += chunk.toString();
+            });
+            req.on("end", () => {  
+                console.log(body, "webhook response"); 
+                res.end("ok");
+            });
+        }
+        return res.status(200); 
+        // res.json(req.body);
     }
 }
 
