@@ -39,7 +39,7 @@ class MercadoPagoService {
                     "description": 'Dispositivo móvil de Tienda e-commerce',
                     "unit_price": Number(product.price),
                     "picture_url": product.img,
-                    "quantity": 1,
+                    "quantity": 1
                 }
             ],
             "payment_methods": {
@@ -50,7 +50,7 @@ class MercadoPagoService {
                 ],
                 "excluded_payment_types": [
                     {
-                        "id": "ticket"
+                        "id": "atm"
                     }
                 ],
                 "installments": 6
