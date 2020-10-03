@@ -12,31 +12,24 @@ class MercadoPagoService {
         
     }
 
-    getPayment = () => {
-        return {
-            payment_id: 15,
-            client: 'Federico'
-        }
-    }
-
     createPreference = async (product) => {
-        // const payer = {
-        //     "name": "Lalo",
-        //     "surname": "Landa",
-        //     "email": "test_user_63274575@testuser.com",
-        //     "phone": {
-        //         "area_code": "11",
-        //         "number": 22223333
-        //     },
-        //     "address": {
-        //         "street_name": "False",
-        //         "street_number": 123,
-        //         "zip_code": "1111"
-        //     }
-        // }
         const payer = {
-            "email": "test_user_67666701@testuser.com",
+            "name": "Lalo",
+            "surname": "Landa",
+            "email": "test_user_63274575@testuser.com",
+            "phone": {
+                "area_code": "11",
+                "number": 22223333
+            },
+            "address": {
+                "street_name": "False",
+                "street_number": 123,
+                "zip_code": "1111"
+            }
         }
+        // const payer = {
+        //     "email": "test_user_67666701@testuser.com",
+        // }
         // Crea un objeto de preferencia
         let preference = {
             items: [
